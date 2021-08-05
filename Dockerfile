@@ -10,9 +10,9 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 
 # Copy app source and install dependencies
 RUN mkdir -p /opt/app
-RUN mkdir -p /opt/app/django_skeleton
+RUN mkdir -p /opt/app/custom_entity_store
 COPY requirements.txt start-server.sh manage.py db.sqlite3* .pip_cache* /opt/app/
-COPY custom_entity_store /opt/app/django_skeleton/
+COPY custom_entity_store /opt/app/custom_entity_store/
 
 WORKDIR /opt/app
 RUN pip install -r requirements.txt --cache-dir /opt/app/.pip_cache
