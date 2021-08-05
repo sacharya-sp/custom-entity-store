@@ -8,6 +8,6 @@ logger = logging.getLogger(__name__)
 
 
 class PingView(GenericAPIView):
-    def get(self):
+    def get(self, request):
         logger.info("Ping received for custom-entity-store")
         return JsonResponse(["Ping received for custom-entity-store"], safe=False)
