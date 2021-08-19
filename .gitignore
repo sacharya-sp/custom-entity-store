@@ -19,7 +19,7 @@
 # Python / Django
 .pip_cache/
 static/
-db.*
+db.sqlite3
 .project
 __pycache__
 

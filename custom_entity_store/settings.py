@@ -38,7 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'custom_entity_store.apps.CustomEntityStoreConfig',
+    'graphene_django',
 ]
+
+GRAPHENE = {
+    'SCHEMA': 'custom_entity_store.graphql.schema'
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

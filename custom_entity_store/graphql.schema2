@@ -1,0 +1,10 @@
+query = '''
+    query {
+      entities {
+        id,
+        type,
+        data
+      }
+    }
+'''
+result = schema.execute(query)
