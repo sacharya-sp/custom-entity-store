@@ -29,6 +29,5 @@ kubectl -n test-namespace get all
 kubectl -n test-namespace get pod
 
 # The service will then be deployed to:
-# http://k8s-testname-testingr-fc74841668-1801831464.us-east-1.elb.amazonaws.com/v1/example/ping
-
+# http://k8s-testname-testingr-fc74841668-1801831464.us-east-1.elb.amazonaws.com/graphql
 ```
