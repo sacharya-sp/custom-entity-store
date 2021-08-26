@@ -2,3 +2,4 @@ Django
 gunicorn
 djangorestframework
 graphene-django==2.15.0
+django-cors-headers==3.8.0
